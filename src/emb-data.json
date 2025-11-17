@@ -1,0 +1,29 @@
+[
+  {
+    "id": 296493,
+    "target": false,
+    "checklistId": 23130,
+    "type": "{\"~#link\":{\"label\":\"Plant\",\"importError\":false,\"autoCheck\":false,\"settings\":\"{\\\"selectExistingBy\\\":\\\"\\\",\\\"primaryParent\\\":null,\\\"showMetaData\\\":false,\\\"child\\\":false,\\\"disableTitleHyperlink\\\":false,\\\"alwaysAllowManualLinks\\\":false,\\\"autoFillRelated\\\":false,\\\"showCompressedPreview\\\":true,\\\"workflow\\\":9449,\\\"select\\\":true,\\\"type\\\":\\\"workflow\\\",\\\"fields\\\":[],\\\"create\\\":true,\\\"showArchived\\\":false,\\\"multiple\\\":false}\",\"sourceProcessSettings\":\"{\\\"selectExistingBy\\\":\\\"\\\",\\\"primaryParent\\\":null,\\\"showMetaData\\\":false,\\\"child\\\":false,\\\"disableTitleHyperlink\\\":false,\\\"alwaysAllowManualLinks\\\":false,\\\"label\\\":\\\"Plant\\\",\\\"autoFillRelated\\\":false,\\\"showCompressedPreview\\\":true,\\\"workflow\\\":9449,\\\"select\\\":true,\\\"type\\\":\\\"workflow\\\",\\\"fields\\\":[],\\\"create\\\":true,\\\"showArchived\\\":false,\\\"multiple\\\":false}\",\"linkedProcessSettings\":\"{\\\"selectExistingBy\\\":\\\"\\\",\\\"primaryParent\\\":false,\\\"showMetaData\\\":false,\\\"child\\\":true,\\\"disableTitleHyperlink\\\":false,\\\"alwaysAllowManualLinks\\\":false,\\\"label\\\":\\\"Audit Role\\\",\\\"autoFillRelated\\\":false,\\\"seqNo\\\":92,\\\"showCompressedPreview\\\":true,\\\"workflow\\\":14606,\\\"select\\\":true,\\\"type\\\":\\\"workflow\\\",\\\"fields\\\":[],\\\"hidden\\\":null,\\\"create\\\":true,\\\"showArchived\\\":false,\\\"multiple\\\":true}\"}}",
+    "config": {
+      "label": "Plant"
+    }
+  },
+  {
+    "id": 296494,
+    "target": false,
+    "checklistId": 23130,
+    "type": "{\"~#user\":{\"label\":\"Users mapped to this role\",\"importError\":false,\"autoCheck\":false,\"settings\":\"{\\\"users\\\":[],\\\"multiple\\\":true}\"}}",
+    "config": {
+      "label": "Users mapped to this role"
+    }
+  },
+  {
+    "id": 296496,
+    "target": false,
+    "checklistId": 23130,
+    "type": "{\"~#number\":{\"label\":\"Audit coverage target per quarter\",\"importError\":false,\"autoCheck\":false,\"settings\":\"{}\"}}",
+    "config": {
+      "label": "Audit coverage target per quarter"
+    }
+  }
+]
