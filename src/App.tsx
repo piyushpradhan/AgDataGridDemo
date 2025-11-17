@@ -253,9 +253,7 @@ function App() {
                 _valueA: string | null | undefined,
                 _valueB: string | null | undefined,
                 nodeA: IRowNode<Record<string, unknown>>,
-                nodeB: IRowNode<Record<string, unknown>>,
-                // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                isInverted?: boolean
+                nodeB: IRowNode<Record<string, unknown>>
               ) => {
                 const formattedA =
                   getFormattedValueFromRow(
