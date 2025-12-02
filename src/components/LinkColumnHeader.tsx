@@ -108,7 +108,7 @@ export function LinkColumnHeader(params: LinkColumnHeaderParams) {
     };
     const originalMenuTabs = columnMenuApi.getMenuTabs?.();
     columnMenuApi.setMenuTabs?.(["filterMenuTab"]);
-    showColumnMenu(filterButtonRef.current, () => {});
+    showColumnMenu(filterButtonRef.current as HTMLElement, () => {});
     window.setTimeout(() => {
       columnMenuApi.setMenuTabs?.(originalMenuTabs);
     }, 0);
