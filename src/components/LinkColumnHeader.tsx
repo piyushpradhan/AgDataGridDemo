@@ -102,14 +102,13 @@ export function LinkColumnHeader(params: LinkColumnHeaderParams) {
     event: React.MouseEvent<HTMLButtonElement>
   ) => {
     event.stopPropagation();
-    if (!enableMenu || !filterButtonRef.current) return;
     const columnMenuApi = column as unknown as {
       getMenuTabs?: () => string[] | undefined;
       setMenuTabs?: (menuTabs?: string[]) => void;
     };
     const originalMenuTabs = columnMenuApi.getMenuTabs?.();
     columnMenuApi.setMenuTabs?.(["filterMenuTab"]);
-    showColumnMenu(filterButtonRef.current);
+    showColumnMenu(filterButtonRef.current, () => {});
     window.setTimeout(() => {
       columnMenuApi.setMenuTabs?.(originalMenuTabs);
     }, 0);
@@ -156,26 +155,24 @@ export function LinkColumnHeader(params: LinkColumnHeaderParams) {
           {getSortIcon()}
         </button>
       )}
-      {enableMenu && (
-        <button
-          ref={filterButtonRef}
-          onClick={handleFilterButtonClick}
-          style={{
-            border: "1px solid #ccc",
-            background: isFilterActive ? "#1976d2" : "#f5f5f5",
-            color: isFilterActive ? "#fff" : "#333",
-            cursor: "pointer",
-            fontSize: "11px",
-            padding: "2px 6px",
-            lineHeight: 1,
-            borderRadius: "3px",
-            fontWeight: "500",
-          }}
-          title="Filter column"
-        >
-          🔍
-        </button>
-      )}
+      <button
+        ref={filterButtonRef}
+        onClick={handleFilterButtonClick}
+        style={{
+          border: "1px solid #ccc",
+          background: isFilterActive ? "#1976d2" : "#f5f5f5",
+          color: isFilterActive ? "#fff" : "#333",
+          cursor: "pointer",
+          fontSize: "11px",
+          padding: "2px 6px",
+          lineHeight: 1,
+          borderRadius: "3px",
+          fontWeight: "500",
+        }}
+        title="Filter column"
+      >
+        🔍
+      </button>
       {isFilterActive && (
         <span
           title="Filter applied"
